@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="navegacionFlex">
+            <div class="contenedorLogoNav">
+                <a href="#"> <img class="logo" src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0" </a>
+            </div> <!-- <a href="#">  <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
+                        </a>
+                        <a href="#">  <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
+                        </a> -->
+            <H2 class="linkNav">Conf BsAs</H2>
+            <nav> <!-- etiqueta semantica encargada de la navegacion-->
+                <!-- listas desornedadas-->
+                <ul>
+                    <li class="listaItem"><a class="menuBlanco linkNav" href="#conferencia">La conferencia</a></li>
+                    <li class="listaItem"><a class="menuGris linkNav" href="#Oradores">Los Oradores</a></li>
+                    <li class="listaItem"><a class="menuGris linkNav" href="#lugarFecha">El Lugar y la fecha</a>
+                    </li>
+                    <li class="listaItem"><a class="menuGris linkNav" href="#formularioOrador">Conviertete en
+                            Orador</a>
+                    </li>
+                    <li class="listaItem"><a class="menuVerde linkNav" href="./pages/tickets.html">Comprar Tickets</a></li>
+                </ul>
+        
+            </nav>
+        </section>
+        <section class="imagenFondo" id="coferencia">
+            <div class="tituloYtextoImagen">
+                <!-- una seccion que tiene que tener un titulo, en este caso el principal del sitio web. Va a ser una seccion que tenga una imagen de fondo-->
+                <h1 class="tituloHeader">Conf Bs As</h1>
+                <div class="textoImagenFondo">
+                    <p>Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra comunidad el conocimiento y
+                        experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
+                        evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                        espereamos!</p>
+                </div>
+                <div class="contenedorBotonesHeader">
+                    <a class=quieroSer">Quiero ser Orador </a>
+                    <a class="comprarTickets">Comprar Tickets </a>
+                </div>
+        </section></header>
+
+    <main>
+        <!-- <article>  indica contenido independiente, articulos-->
+        <!-- <header>
+                <h1></h1>
+            </header>
+            <footer>
+
+            </footer>
+        </article> -->
+        <section id="Oradores">
+
+            <h2>
+                <div class="ConoceOradores">Conoce a los </div>Oradores
+            </h2>
+            <!-- <h2>Conoce a los</h2><h2>Oradores</h2>
+            <H2><span> Conoce a los</span><br> Oradores</H2> -->
+            <div class="contenedorTarjetas">
+                <div class="tarjetas">
+                    <!-- <img src="https://picsum.photos/300/300?grayscale" alt=""> -->
+                    <img src="C:\CaC PHP\Proyecto\Assets\img\steve.jpg" alt="Steve Jobs">
+                    <h4>Javascript</h4>
+                    <h4>React</h4>
+                    <h3>Steve Jobs</h3>
+                    <p> texto</p>
+                </div>
+                <div class="tarjetas">
+                    <!-- <img src="https://picsum.photos/300/300?grayscale&random=1" alt=""> -->
+                    <img src="../Proyecto/Assets/img/bill.jpg" alt="Bill">
+                    <h4>Javascript</h4>
+                    <h4>React</h4>
+                    <h3>Bill Gates</h3>
+                    <p>
+                        texto
+                    </p>
+                </div>
+                <div class="tarjetas">
+                    <img src="../Proyecto/Assets/img/ada.jpeg" alt="Ada">
+                    <h4>Negocios</h4>
+                    <h4>Startups</h4>
+                    <h3>Ada Lovelace</h3>
+                    <p>texto</p>
+                </div>
+            </div>
+
+        </section>
+<section class="contenedorFlexible">
+
+    <div class="contenedorImg"></div>
+    <div class="contenedorTexto">
+        <h2>Buenos Aires - Octubre</h2>
+        <p>texto de bs as octubre</p>
+        <a href="">Conocé más</a>
+    </div>
+
+</section>
+
+        <section id="formularioOrador">
+            <h2>
+                <div>Conviertete en </div>Orador
+            </h2>
+            <p> lorem ipsum </p>
+            <form action="">
+                <fieldset>
+                    <legend> Formulario de texto</legend>
+                    <div>
+                        <input type="text" id="name" name="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div>
+                        <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
+                    </div>
+
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="ingrese su mail" required>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+                <div>
+                    <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="sobre que quieres escribir?">
+                
+                                    </textarea>
+                    <p>Recuerda incluir un titulo para tu charla</p>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Formulario">
+                </div>
+            </form>
+            <br>
+            <div>
+                <iframe src="" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <aside>
+        <p>colocar publicidad</p>
+    </aside>
+    <footer class="footer colorFondoGradiente">
+        <a href="https://www.whatsapp.com" target="_blank"> <!-- Black abre una nueva pestaña-->
+            <p>Whatsapp</p>
+        </a>
+        <nav>
+            <ul>
+                <li class="listaItem"><a href="">Preguntas Frecuentes</a></li>
+                <li class="listaItem"><a href="">Contáctenos</a></li>
+                <li class="listaItem"><a href="">Prensa</a></li>
+                <li class="listaItem"><a href="">Conferencias</a></li>
+                <li class="listaItem"><a href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a href="">Privacidad</a></li>
+                <li class="listaItem"><a href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
