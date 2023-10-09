@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto integrador</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header fuenteTexto">
         <section class="navegacionFlex">
             <div class="contenedorLogoNav">
-                <a href="#"> <img class="logo" src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0" </a>
-            </div> <!-- <a href="#">  <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
-                        </a>
-                        <a href="#">  <img src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
-                        </a> -->
-            <H2 class="linkNav">Conf BsAs</H2>
-            <nav> <!-- etiqueta semantica encargada de la navegacion-->
-                <!-- listas desornedadas-->
+                <a href="./index.html"> <img class="logo" src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
+                        loading="lazy" </a>
+            </div>
+            <div>
+                <H2 class="tituloNav">Conf BsAs</H2>
+            </div>
+
+            <nav>
+
                 <ul>
                     <li class="listaItem"><a class="menuBlanco linkNav" href="#conferencia">La conferencia</a></li>
                     <li class="listaItem"><a class="menuGris linkNav" href="#Oradores">Los Oradores</a></li>
@@ -29,119 +33,134 @@
                     <li class="listaItem"><a class="menuGris linkNav" href="#formularioOrador">Conviertete en
                             Orador</a>
                     </li>
-                    <li class="listaItem"><a class="menuVerde linkNav" href="./pages/tickets.html">Comprar Tickets</a></li>
+                    <li class="listaItem"><a class="menuVerde linkNav" href="./pages/tickets.html">Comprar Tickets</a>
+                    </li>
                 </ul>
-        
+
             </nav>
         </section>
         <section class="imagenFondo" id="coferencia">
             <div class="tituloYtextoImagen">
                 <!-- una seccion que tiene que tener un titulo, en este caso el principal del sitio web. Va a ser una seccion que tenga una imagen de fondo-->
-                <h1 class="tituloHeader">Conf Bs As</h1>
+                <h1 class="tituloHeader fuenteTexto">Conf Bs As</h1>
                 <div class="textoImagenFondo">
-                    <p>Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra comunidad el conocimiento y
-                        experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
-                        evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                    <p class="fuenteTexto">Bs As llega por primera vez a Argentina, Un evento para compartir con nuestra
+                        comunidad el conocimiento y
+                        experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros
+                        del
+                        evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti.
+                        Te
                         espereamos!</p>
                 </div>
                 <div class="contenedorBotonesHeader">
-                    <a class=quieroSer">Quiero ser Orador </a>
+                    <a class="quieroSer">Quiero ser Orador </a>
                     <a class="comprarTickets">Comprar Tickets </a>
                 </div>
-        </section></header>
+        </section>
+    </header>
 
-    <main>
-        <!-- <article>  indica contenido independiente, articulos-->
-        <!-- <header>
-                <h1></h1>
-            </header>
-            <footer>
+    <main class="main">
 
-            </footer>
-        </article> -->
         <section id="Oradores">
 
-            <h2>
-                <div class="ConoceOradores">Conoce a los </div>Oradores
+            <h2 class="conoce fuenteTexto">
+                Conoce a los <div class="ConoceOradores fuenteTextoBold">Oradores</div>
             </h2>
-            <!-- <h2>Conoce a los</h2><h2>Oradores</h2>
-            <H2><span> Conoce a los</span><br> Oradores</H2> -->
-            <div class="contenedorTarjetas">
+
+            <div class="contenedorTarjetas fuenteTexto">
                 <div class="tarjetas">
-                    <!-- <img src="https://picsum.photos/300/300?grayscale" alt=""> -->
-                    <img src="C:\CaC PHP\Proyecto\Assets\img\steve.jpg" alt="Steve Jobs">
-                    <h4>Javascript</h4>
-                    <h4>React</h4>
-                    <h3>Steve Jobs</h3>
-                    <p> texto</p>
+                    <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                    <div class="contenedorBotonesTarjetas">
+                        <h4 class="javaBoton">Javascript</h4>
+                        <h4 class="reactBoton">React</h4>
+                    </div>
+                    <h3 class="fuenteTextoBold">Steve Jobs</h3>
+                    <p class="textoTarjetas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos officia
+                        quod facilis, tempore, reiciendis nulla
+                        sunt deserunt magnam, accusamus magni. Veritatis, aliquam harum praesentium possimus hic magnam
+                        nesciunt sunt!
+                    </p>
                 </div>
                 <div class="tarjetas">
-                    <!-- <img src="https://picsum.photos/300/300?grayscale&random=1" alt=""> -->
                     <img src="../Proyecto/Assets/img/bill.jpg" alt="Bill">
-                    <h4>Javascript</h4>
-                    <h4>React</h4>
+                    <div class="contenedorBotonesTarjetas">
+                        <h4 class="javaBoton">Javascript</h4>
+                        <h4 class="reactBoton">React</h4>
+                    </div>
                     <h3>Bill Gates</h3>
-                    <p>
-                        texto
+
+                    <p class="textoTarjetas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos officia quod facilis, tempore,
+                        reiciendis nulla
+                        sunt deserunt magnam, accusamus magni. Veritatis, aliquam harum praesentium possimus hic magnam
+                        nesciunt sunt!
                     </p>
                 </div>
                 <div class="tarjetas">
                     <img src="../Proyecto/Assets/img/ada.jpeg" alt="Ada">
-                    <h4>Negocios</h4>
-                    <h4>Startups</h4>
+                    <div class="contenedorBotonesTarjetas">
+                        <h4 class="negociosBoton">Negocios</h4>
+                        <h4 class="startupsBoton">Startups</h4>
+                    </div>
                     <h3>Ada Lovelace</h3>
-                    <p>texto</p>
+                    <p class="textoTarjetas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos officia
+                        quod facilis, tempore, reiciendis nulla
+                        sunt deserunt magnam, accusamus magni. Veritatis, aliquam harum praesentium possimus hic magnam
+                        nesciunt sunt!
+                    </p>
                 </div>
             </div>
 
         </section>
-<section class="contenedorFlexible">
+        <section id="lugarFecha" class="contenedorFlexible">
 
-    <div class="contenedorImg"></div>
-    <div class="contenedorTexto">
-        <h2>Buenos Aires - Octubre</h2>
-        <p>texto de bs as octubre</p>
-        <a href="">Conocé más</a>
-    </div>
+            <div class="contenedorImg"></div>
+            <div class="contenedorTexto fuenteTexto">
+                <H2 class="titulo_octubre">Bs As - Octubre</H2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                    Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de
+                    Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de
+                    Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600
+                    km2 de superficie).</p>
+                <a href="" class="conoceMasBoton">Conocé más</a>
+            </div>
 
-</section>
+
+        </section>
 
         <section id="formularioOrador">
-            <h2>
-                <div>Conviertete en </div>Orador
-            </h2>
-            <p> lorem ipsum </p>
-            <form action="">
-                <fieldset>
-                    <legend> Formulario de texto</legend>
-                    <div>
-                        <input type="text" id="name" name="nombre" placeholder="Nombre" required>
+            <div class="contenedorTextoFormulario fuenteTexto">
+                <div class="convierte">CONVIÉRTETE EN UN </div>
+                <h2>ORADOR</h2>
+                <p> Anótate como Orador para dar la charla Ignite. Cuéntanos de que quieres hablar! </p>
+            </div>
+            <form action="" class="fuenteTexto">
+                <div class="contenedorFormularioPadre">
+                    <div class="contenedorFnombreApellido">
+                        <div class="nombreF">
+                            <input type="text" id="name" name="nombre" placeholder="Nombre" cols="25"
+                                class="fuenteTexto" required>
+                        </div>
+
+                        <div class="apellidoF">
+                            <input type="text" id="apellido" cols="25" name="apellido" placeholder="apellido"
+                                class="fuenteTexto" required>
+                        </div>
                     </div>
 
                     <div>
-                        <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
-                    </div>
-
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="ingrese su mail" required>
+                        <textarea name="comentario" id="comentario" cols="60" rows="5"
+                            placeholder="Sobre que quieres hablar?" class="fuenteTexto" required></textarea>
+                        <p class="recuerda">Recuerda incluir un titulo para tu charla</p>
                     </div>
                     <div>
-                        <input type="submit">
+                        <input type="submit" value="Enviar" class="enviarF">
                     </div>
-                </fieldset>
-                <div>
-                    <textarea name="comentario" id="comentario" cols="60" rows="5" placeholder="sobre que quieres escribir?">
-                
-                                    </textarea>
-                    <p>Recuerda incluir un titulo para tu charla</p>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar Formulario">
                 </div>
             </form>
             <br>
             <div>
-                <iframe src="" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe src="" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
         </section>
 
@@ -149,19 +168,16 @@
     <aside>
         <p>colocar publicidad</p>
     </aside>
-    <footer class="footer colorFondoGradiente">
-        <a href="https://www.whatsapp.com" target="_blank"> <!-- Black abre una nueva pestaña-->
-            <p>Whatsapp</p>
-        </a>
+    <footer class="footer fuenteTexto colorFondoGradiente">
         <nav>
             <ul>
-                <li class="listaItem"><a href="">Preguntas Frecuentes</a></li>
-                <li class="listaItem"><a href="">Contáctenos</a></li>
-                <li class="listaItem"><a href="">Prensa</a></li>
-                <li class="listaItem"><a href="">Conferencias</a></li>
-                <li class="listaItem"><a href="">Términos y condiciones</a></li>
-                <li class="listaItem"><a href="">Privacidad</a></li>
-                <li class="listaItem"><a href="">Estudiantes</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Preguntas Frecuentes</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Contáctenos</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Prensa</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Conferencias</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Términos y condiciones</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Privacidad</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Estudiantes</a></li>
             </ul>
         </nav>
     </footer>
