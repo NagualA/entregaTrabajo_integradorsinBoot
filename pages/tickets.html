@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar tickets</title>
-     <!--link de favicon-->
-     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Tickets</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="index" href="../index.html#lugarFecha"
 </head>
+
 <body>
-    <header>
-        <!-- las imagenes son etiquetas abiertas y en linea-->
-        <a href="../index.html">  
-            <img src="../assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0">      
-        </a>
-        <h2>Conf. Bs.As.</h2>
-        <!--etiqueta semantica encargada de la navegacion-->
+    <header class="header fuenteTexto">
+        <section class="navegacionFlex">
+            <!-- <div class="contenedorLogoNav">
+                <a href="./index.html"> <img class="logo" src="../assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
+                        loading="lazy" </a>
+            </div> -->
+            <div>
+                <a href="../index.html"> <H2 class="tituloNav">Conf BsAs</H2></a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li class="listaItem"><a class="menuGris linkNav" href="../index.html#conferencia">La conferencia</a></li>
+                    <li class="listaItem"><a class="menuGris linkNav" href="../index.html#Oradores">Los Oradores</a></li>
+                    <li class="listaItem"><a class="menuGris linkNav" href="../index.html#lugarFecha">El Lugar y la fecha</a>
+                    </li>
+                    <li class="listaItem"><a class="menuBlanco linkNav" href="../index.html#formularioOrador">Conviertete en
+                            Orador</a>
+                    </li>
+                    <li class="listaItem"><a class="menuVerde linkNav" href="#">Comprar Tickets</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+    <section class="tarjetaTipoDescuento fuenteTexto"> 
+        <div class="tarjetaEstudiante">
+            <h3 class="fuenteTextoBold">Estudiante </h3>
+            <p>Tienen un descuento</p>
+            <h4>80%</h4>
+            <p>*presentar documentación</p>
+        </div>
+        <div class="tarjetaTrainee">
+            <h3 class="fuenteTextoBold">Trainee </h3>
+            <p>Tienen un descuento</p>
+            <h4>50%</h4>
+            <p>*presentar documentación</p>
+        </div>
+        <div class="tarjetaJunior">
+            <h3 class="fuenteTextoBold">Junior </h3>
+            <p>Tienen un descuento</p>
+            <h4>15%</h4>
+            <p>*presentar documentación</p>
+        </div>
+
+    </section>
+    <aside class="fuenteTexto tituloTickets">
+        <p>venta</p>
+        <h2>VALOR DE TICKET $200</h2>
+    </aside>
+    <form action="" class="fuenteTexto">
+        <div class="contenedorFormularioPadre">
+            <div class="contenedorFnombreApellido">
+                <div class="nombreF">
+                    <input type="text" id="name" name="nombre" placeholder="Nombre" cols="30"
+                        class="fuenteTexto" required>
+                </div>
+
+                <div class="apellidoF">
+                    <input type="text" id="apellido" cols="30" name="apellido" placeholder="apellido"
+                        class="fuenteTexto" required>
+                </div>
+                
+            </div>
+            <div class="mailF">
+                <input type="mail" id="mail" cols="30" name="mail" placeholder="ingrese su correo"
+                    class="fuenteTexto" required>
+            </div>
+            <p>Cantidad</p>
+            <input type="number" id="cantidad" cols="30" name="cantidad" placeholder="cantidad" min="1" required>
+            <p>Categoria</p>
+            <select id="categoria" name="categoria" required>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+            </select>
+            <div class="total">Total a pagar: $</div>
+            <button type="reset" id="borrar" name="borrar" class="btn btn-primary">Comprar ticket</button>
+            <button type="submit" id="resumen" name="resumen" class="btn btn-primary">Resumen</button>
+
+        </div>
+    <footer class="footer fuenteTexto colorFondoGradiente">
         <nav>
-            <!-- listas desordenadas -->
             <ul>
-                <li><a href="../index.html#conferencia">La conferencia</a></li>
-                <li><a href="../index.html#oradores">Los oradores</a></li>
-                <li><a href="../index.html#lugarFecha">El lugar y la fecha</a></li>
-                <li><a href="../index.html#formularioOrador">Conviértete en orador</a></li>
-                <li><a href="#">Comprar tickets</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Preguntas Frecuentes</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Contáctenos</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Prensa</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Conferencias</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Términos y condiciones</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Privacidad</a></li>
+                <li class="listaItem"><a href="" class="linkNav">Estudiantes</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-       <section>
-        <h1>Comprar tickets</h1>
-        <img src="https://picsum.photos/300/300?grayscale&random=2" alt="random">
-       <!--  <img src="../assets/img/Steve_Jobs.jpg" alt="Steve Jobs">-->
-     
-       </section>
-    </main>
-    <footer>
-
     </footer>
-    
 </body>
+
 </html>
