@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
 <body>
     <header class="header fuenteTexto">
         <section class="navegacionFlex">
-            <!-- <div class="contenedorLogoNav">
-                <a href="./index.html"> <img class="logo" src="../assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
+            <div class="contenedorLogoNav">
+                <a href="../index.html"><img class="logo" src="../assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0"
                         loading="lazy" </a>
-            </div> -->
+            </div>
             <div>
                 <a href="../index.html"> <H2 class="tituloNav">Conf BsAs</H2></a>
             </div>
@@ -44,20 +44,22 @@
     <section class="tarjetaTipoDescuento fuenteTexto"> 
         <div class="tarjetaEstudiante">
             <h3 class="fuenteTextoBold">Estudiante </h3>
+            <br>
             <p>Tienen un descuento</p>
-            <h4>80%</h4>
+            <br>
+            <h4>80%</h4><br><br>
             <p>*presentar documentación</p>
         </div>
         <div class="tarjetaTrainee">
             <h3 class="fuenteTextoBold">Trainee </h3>
-            <p>Tienen un descuento</p>
-            <h4>50%</h4>
+            <br><p>Tienen un descuento</p><br>
+            <h4>50%</h4><br><br>
             <p>*presentar documentación</p>
         </div>
         <div class="tarjetaJunior">
             <h3 class="fuenteTextoBold">Junior </h3>
-            <p>Tienen un descuento</p>
-            <h4>15%</h4>
+            <br><p>Tienen un descuento</p><br>
+            <h4>15%</h4><br><br>
             <p>*presentar documentación</p>
         </div>
 
@@ -66,37 +68,27 @@
         <p>venta</p>
         <h2>VALOR DE TICKET $200</h2>
     </aside>
-    <form action="" class="fuenteTexto">
-        <div class="contenedorFormularioPadre">
-            <div class="contenedorFnombreApellido">
-                <div class="nombreF">
-                    <input type="text" id="name" name="nombre" placeholder="Nombre" cols="30"
-                        class="fuenteTexto" required>
-                </div>
-
-                <div class="apellidoF">
-                    <input type="text" id="apellido" cols="30" name="apellido" placeholder="apellido"
-                        class="fuenteTexto" required>
-                </div>
-                
-            </div>
-            <div class="mailF">
-                <input type="mail" id="mail" cols="30" name="mail" placeholder="ingrese su correo"
-                    class="fuenteTexto" required>
-            </div>
-            <p>Cantidad</p>
-            <input type="number" id="cantidad" cols="30" name="cantidad" placeholder="cantidad" min="1" required>
-            <p>Categoria</p>
-            <select id="categoria" name="categoria" required>
-                <option value="Estudiante">Estudiante</option>
-                <option value="Trainee">Trainee</option>
-                <option value="Junior">Junior</option>
+    <section class="formulario2 fuenteTexto">
+        <form action="#" method="post" name="formulario">
+            <input placeholder="Nombre" required autocomplete="on"  type="text" id="nombres" name="nombre_usuario" />
+            <input placeholder="Apellido" required autocomplete="on" type="text" id="apellidos" name="apellido_usuario" /><br>
+            <input class="correo" placeholder="Correo" required autocomplete="on" type="email" id="email" name="email"/><br>
+            <div class="label fuenteTexto"><label for="cantidad" min="1" required >Cantidad</label></div>
+            <div class="label fuenteTexto"><label for="categorias">Categoria</label></div><br>
+            <input placeholder="cantidad" type="number" name="cantidad" min="1">
+            <select class="select" name="categorias" id="categorias">
+                <option value="sinCategoria">Sin Categoria</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trainee">Trainee</option>
+                <option value="junior">Junior</option>
             </select>
-            <div class="total">Total a pagar: $</div>
-            <button type="reset" id="borrar" name="borrar" class="btn btn-primary">Comprar ticket</button>
-            <button type="submit" id="resumen" name="resumen" class="btn btn-primary">Resumen</button>
+            <div class="total">Total a pagar:$</div>
 
-        </div>
+        <input class="button" type="reset" name="borrar" value="Borrar">
+        <input class="button" type="submit" value="Resumen">
+        </form>
+
+       </section>
     <footer class="footer fuenteTexto colorFondoGradiente">
         <nav>
             <ul>
