@@ -96,6 +96,7 @@ header nav ul li{
     /* flex-direction: column; */
     height: 80vh;
     position: relative;
+    flex-wrap: wrap;
     .tituloYtextoImagen{
         position: absolute;
         top: 30vh;
@@ -162,6 +163,7 @@ body{
     width: 80%;
     margin: 2% auto;
     text-align: center;
+    flex-wrap: wrap;
 
 }
 .tarjetas{
@@ -179,12 +181,13 @@ body{
 .contenedorBotonesTarjetas{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     .javaBoton{
         background-color: rgb(254, 193, 7);
         padding: 5px;
         border-radius: 5px;
         margin-right: 5px;
-        margin-left: 15px;       
+        margin-left: 5px;       
     }
     .reactBoton{
         background-color: rgb(23, 162, 185);
@@ -376,7 +379,7 @@ body{
     border-radius: 5px;
     color: rgb(35, 87, 126);
 }
-.formulario2 form .button {
+.formulario2 .button {
 background-color: rgb(150, 201, 62);
 border: none;
 padding: 10px;
@@ -454,8 +457,8 @@ border-radius: 5px;
 
     .tarjetaEstudiante {
         display: inline-block;
-        width: 20vw;
-        height: 35vh;
+        width: 15rem;
+        /* height: 35vh; */
         padding: 0.5%;
         border: 1px solid rgb(0, 123,255);
         border-radius: 1%;
@@ -471,8 +474,8 @@ border-radius: 5px;
     
     .tarjetaTrainee {
         display: inline-block;
-        width: 20vw;
-        height: 35vh;
+        width: 15rem;
+        /* height: 35vh; */
         padding: 0.5%;
         border: 1px solid rgb(23, 162, 184);
         border-radius: 1%;
@@ -485,8 +488,8 @@ border-radius: 5px;
     }
     .tarjetaJunior {
         display: inline-block;
-        width: 20vw;
-        height: 35vh;
+        width: 15rem;
+        /* height: 35vh; */
         padding: 0.5%;
         border: 1px solid rgb(255, 193,7);
         border-radius: 1%;
